@@ -7,9 +7,7 @@
   * Click on the `ViewController.swift` file from the **Identity Inspector (⌥⌘3)**, highlight `ViewController` in the source code, then right click -> Refactor -> Rename
 * Head over to `Main.storyboard` and drag a `Table View Controller` object onto the Storyboard.
   * Click on the **Object Library (⇧⌘L)** and drag it onto `Main.storyboard`.
-* Click the newly created `Table View Controller` then in the Xcode dropdown menu's go to Editor -> Embed In -> Navigation Controller.
-  > A navigation controller is a container view controller that manages one or more child view controllers in a navigation interface. They allow us to move between different view controller scenes by adding or popping view controllers from a stack.
-* Click on the new `Navigation Controller` and in the **Attributes Inspector (⌥⌘4)** check the "Is Initial View Controller" option.
+* Click on the new `Table View Controller` and in the **Attributes Inspector (⌥⌘4)** check the "Is Initial View Controller" option.
 * Go to **Project Navigator** (⌘1) and add a new file to the project
   * Use the **Cocoa Touch Class** option then hit next
   * Update "Subclass of" to `UITableViewController`
@@ -180,6 +178,12 @@ Segue's also provide a way to pass data from one controller to the next. In our 
   ```
 
 * Build and run the app and verify that you are passing data correctly to the `DetailViewController`
+
+## Navigation: Back button
+
+* In the storyboard, click the `Table View Controller` then in the Xcode dropdown menu's go to Editor -> Embed In -> Navigation Controller.
+  > A navigation controller is a container view controller that manages one or more child view controllers in a navigation interface. They allow us to move between different view controller scenes by adding or popping view controllers from a stack.  This will natively add a back button for us.
+* Click on the new `Navigation Controller` and in the **Attributes Inspector (⌥⌘4)** check the "Is Initial View Controller" option.
 
 ## Adding Notes To The Model
 
