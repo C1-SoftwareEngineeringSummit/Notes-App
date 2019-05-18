@@ -202,7 +202,7 @@ Segue's also provide a way to pass data from one controller to the next. In our 
   * Select `Show` in the popup to create a segue of type `Show`
   * Click on the new segue in the storyboard then on **Attributes Inspector (⌥⌘4)**. Give it the Identifier name: `showNewNote`
 * In `MasterViewController.swift` create a `String` constant to match the Identifier
-  * You should not have the following constants declared:
+  * You should now have the following constants declared:
     ```swift
     let cellIdentifier = "noteCell"
     let showNoteSegue = "showNote"
